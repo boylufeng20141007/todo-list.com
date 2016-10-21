@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "NODE_ENV=debug webpack-dev-server --hot --progress --colors",
+    "server": "NODE_ENV=test nodemon --harmony app.js",
     "build": "webpack --progress --colors"
   },
   "repository": {
@@ -24,6 +25,9 @@
   },
   "homepage": "https://github.com/boylufeng20141007/todo-list.com#readme",
   "dependencies": {
+    "co-views": "^2.1.0",
+    "colors": "^1.1.2",
+    "ejs": "^2.5.2",
     "es6-promise": "^4.0.5",
     "events": "^1.1.1",
     "flux": "^3.1.0",
